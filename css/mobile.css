@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1024px){
+BODY{
+margin:0 0 0 0;
+}
+}
+@media only screen and (max-width: 768px){
+BODY{
+margin:0;
+}
+#page{
+width:100%;
+}
+#content{
+padding:20px 20px 0 20px;
+}
+#main{
+width:100%;
+float:none;
+min-height:auto;
+}
+#sidebar{
+width:100%;
+float:none;
+}
+}
+@media only screen and (min-width: 240px) and (max-width: 768px){
+#site-logo{
+float:none;
+width:100%;
+text-align:center;
+}
+#phnum{
+float:none;
+margin:0;
+width:100%;
+text-align:center;
+font-size:2.2em;
+margin:0 0 10px 0;
+}
+.worksection{
+width:100%;
+margin-bottom:20px;
+}
+.worksection.odd{
+margin-right:0;
+}
+}
+#mobileMenu_mobileselect{
+margin:0 0 20px 0;
+width:100%;
+padding:5px 10px;
+background:#000;
+background:rgba(0,0,0,.5);
+color:#333;
+text-shadow:1px solid #ccc;
+border:none;
+transition:all .3s ease;
+-moz-transition:all .3s ease;
+-webkit-transition:all .3s ease;
+-o-transition:all .3s ease;
+-ms-transition:all .3s ease;
+-khtml-transition:all .3s ease;
+appearance:none;
+}
+#mobileMenu_mobileselect:focus{
+border:none;
+background:#423219;
+color:#666;
+}
+#mobileMenu_mobileselect option{
+	padding:0 10px;
+	line-height:150%;
+}
+select#mobileMenu_mobileselect option:hover{
+background:#251B0E;
+}
