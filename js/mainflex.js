@@ -10,14 +10,20 @@ $('.current-menu-ancestor > .sub-menu').fadeIn(500);
 
 // Can also be used with $(document).ready()
 $(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide",
-    controlNav:false,
-    controlsContainer: ".controls",
-    pausePlay:true
+  $('.flexslider').each(function (i, e) {
+    var slideshow = $(e).data('slideshow');
+    
+    $(e).flexslider({
+      animation: 'slide',
+      controlNav: false,
+      controlsContainer: '.controls',
+      pausePlay: true,
+      slideshow: slideshow
+    });
   });
+
   $('#mobileselect').mobileMenu({
-				switchWidth: 770,
-				topOptionText:"Navigation"
-			});
+    switchWidth: 770,
+    topOptionText:"Navigation"
+  });
 });
