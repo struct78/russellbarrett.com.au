@@ -167,9 +167,6 @@ font-size:.9em;
 #primary-menu ul li ul li{
 list-style-position:inside;
 }
-.sub-menu{
-display:none;
-}
 .current-menu-item a,.current-menu-ancestor > a{
 color:#fff;
 }
